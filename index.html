@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="site-logo.png"/>
+    <title>Ivy Radio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "styles.css" />
+  </head>
+  <body>
+    <script>
+      window.onload = function(){
+        var song = "None"
+        document.getElementById("song").innerHTML = "<b>" + song + "</b>";
+      };
+
+      var playpause = "⏹️"
+
+      function playpauseset(){
+        if(playpause === "⏹️"){
+          document.getElementById(play-button).innerText = "1";
+        }else{
+          document.getElementById(play-button).innerText = "2";
+        }
+      }
+    </script>
+    
+    <style>
+      body {
+        background-image: url('Background.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position:center; 
+      }
+      
+      @font-face {
+      font-family: 'Roboto';
+      src: url('Roboto-ThinItalic-webfont.eot');
+      src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+      url('Roboto-ThinItalic-webfont.woff') format('woff'),
+      url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+      url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg');
+      font-style: italic;
+      }
+      
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+      
+      .center {
+        display: table;
+        margin: 0 auto;
+        text-align: center;
+      }
+  
+      .button1 {border-radius: 2px;}
+      .button2 {border-radius: 4px;}
+      .button3 {border-radius: 8px;}
+      .button4 {border-radius: 12px;}
+      .button5 {border-radius: 50%;}
+
+      .div1 {position: fixed; left:37%}
+      .div2 {position: fixed; left: 35%; top: 75%; background-color: white; width: 30%; height: 10%; border-radius: 12px; text-align: center;}
+
+      .grid-container {display: grid; grid-column-gap: 50px; grid-row-gap: 50px;}
+      .grid-item{grid-row-start: 1; grid-row-end: 1;}
+    </style>
+    <div class="center">
+      <button class="button button4" onclick="window.location.href='admin.html'">Admin Login</button>
+      <button class="button button4" onclick="window.open('https://discord.gg/cbwg5Kj','_blank')";>Join The Discord</button>
+      <button class="button button4">Donate</button>
+    </div>
+    <div class="grid-container">
+      <div class = "div2">
+        <div class="grid-item"><button class="button button4" id="play-button" style="font-size: 200%; top: 0%; color: white; onclick="window.location.href='https://musyc.ga/'";">Go to new site</button></div>
+        <div class="grid-item"><p style="font-size: 120%;"><b>We have moved!!</b></div>
+      </div>
+    </div>
+  </body>
+</html>
